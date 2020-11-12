@@ -49,7 +49,7 @@ class_names = train_ds.class_names
 for image_batch, labels_batch in train_ds:
     print(image_batch.shape)
     print(labels_batch.shape)
-    break1
+    break
 
 # configure the dataset for performance
 # .cache keeps the images in memory after they're loaded off disk during first epoch
