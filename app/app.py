@@ -11,7 +11,7 @@ def index():
     """
 
 @app.route("/api", methods=['GET'])
-def index():
+def api():
     if request.method == 'GET':
         dataset_url = request.args.get('url', '')
         return dataset_url
