@@ -11,10 +11,10 @@ def index():
     """
 
 @app.route("/api", methods=['GET'])
-    def index():
-        if request.method == 'GET':
-            dataset_url = request.args.get('url', '')
-            return dataset_url
+def index():
+    if request.method == 'GET':
+        dataset_url = request.args.get('url', '')
+        return dataset_url
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
